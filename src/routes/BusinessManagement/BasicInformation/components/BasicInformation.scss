@@ -1,0 +1,206 @@
+:global{
+  .BmessageDiv{
+    padding:2rem;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    .Bmessage{
+      float: left;
+      span{
+        line-height:2rem;
+      }
+    }
+    span{
+      font-family: PingFangSC-Regular;
+      font-size: 16px;
+      color: #979797;
+      letter-spacing: 0.57px;
+      line-height: 16px;
+    }
+    span:nth-of-type(2){
+      font-family: PingFangSC-Regular;
+      font-size: 16px;
+      color: #4A4A4A;
+      letter-spacing: 0.57px;
+      line-height: 16px;
+    }
+  }
+  .BasicInformation{
+      background: #F6F6F6;
+      margin:-16px;
+       height: 100%;
+  }
+  .BheaderWrapper{
+    border-radius: 2px;
+    .AppIndividuationDiv{
+      border-top-right-radius: 3px;
+      border-top-left-radius: 3px;
+      background: #00a0ff;
+      height: 5rem;
+      width: 25rem;
+      color: white;
+      font-family: PingFangSC-Medium;
+      font-size: 20px;
+      color: #FFFFFF;
+      letter-spacing: 0.71px;
+      line-height: 5rem;
+      img{
+        display: inline-block;
+        margin: 0 1rem .3rem 1rem;
+      }
+    }
+    .AppIndividuationImg{
+      height:30rem;
+      border: 2px solid #00a0ff;
+      background: #FFFFFF;
+      padding:2rem 4rem;
+    }
+  }
+  .BuploadDiv{
+    position: relative;
+    width:11.4rem;
+    height:11.4rem;
+    background:#F7F7F7;
+    .wareAddicon{
+      width:3rem;
+      height:3rem;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      vertical-align: middle;
+      background:url(../../../../static/add-grey.png) no-repeat;
+    }
+  }
+  .BuploadDiv>img{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:calc(100%);
+  }
+  .subDivWrapper{
+    margin:10px 10px;
+  }
+  .BheaderImgWrapper{
+    height:13.4rem;
+    width: 11.4rem;
+    // background: #F7F7F7;
+    //border: 1px solid #DFDFDF;
+    border-radius: 2px;
+  }
+.Badd{
+  margin: auto;
+  height: 1rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 7rem;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #979797;
+}
+  .BheaderInfo{
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #53504f;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .BchangeImg{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    line-height: 20px;
+    display: inline-block;
+    padding: 0 15px;
+    flex: 1;
+
+  }
+  .BimagesWrapper{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    padding:5rem;
+  }
+  .BminTitle{
+    font-family: SourceHanSansCN-Regular;
+    font-size: 16px;
+    color: #41A1FF;
+    line-height: 16px;
+    display: inline-block;
+    height:1.5rem;
+    padding-left:2rem;
+
+  }
+  .BminTitle:hover{
+    cursor: pointer;
+  }
+  .BhintMessage{
+    background: rgba(65,161,255,0.08);
+    padding:.5rem;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: rgba(0,0,0,0.54);
+    line-height: 24px;
+  }
+  .imgComplete {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 2rem;
+    left: 50%;
+    top: 50%;
+    margin-left: -1rem;
+    margin-top: -1.2rem;
+    z-index: 999;
+    p {
+      font-size: .9rem;
+      color: #00A0FF;
+      margin-top: .3rem;
+    }
+  }
+  .cmpltImgPreview {
+    border: 2px solid #00A0FF;
+    .completeUp{
+      display: block;
+    }
+    .imgDelete{
+      display: none;
+    }
+  }
+  .errorImgPreview {
+    border: 2px solid #dc6b66;
+    .imgComplete {
+      position: absolute;
+      width:auto;
+      left: auto;
+      top: 50%;
+      margin-left:1rem;
+      margin-top: -1.2rem;
+      img {
+        display: block;
+        width: 2.3rem;
+        margin: 0 auto;
+      }
+      p {
+        font-size: .9rem;
+        color: #dc6b66;
+        margin-top: .3rem;
+      }
+    }
+    .errorUp{
+      display: block;
+    }
+  }
+  .errorImgPreview+p.BheaderInfo{
+    color: #FF625B;
+  }
+  .cmpltImgPreview+p.BheaderInfo{
+    color: #41A1FF;
+  }
+}
